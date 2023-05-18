@@ -30,7 +30,7 @@ Change into the cloned repository directory:
 
 `cd ArgCD`
 
-# To install Docker , Kubectl and create minikube ,follow these steps:
+### To install Docker , Kubectl and create minikube ,follow these steps:
 
 ```
 bash docker.sh
@@ -38,7 +38,7 @@ bash kubectl.sh
 bash
 ```
 
-# Install minikube
+### Install minikube
 
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
@@ -46,7 +46,7 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube start --driver=docker
 ```
 
-# To install ArgoCD inside the Kubernetes cluster, follow these steps:
+### To install ArgoCD inside the Kubernetes cluster, follow these steps:
 
 #### 1. Create a new namespace for ArgoCD by running the command:
 
@@ -62,7 +62,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 ## Accessing ArgoCD
 
-# To access the ArgoCD web interface, follow these steps:
+### To access the ArgoCD web interface, follow these steps:
 
 #### 1. Wait for all the pods to become ready by running the command:
 
@@ -84,15 +84,15 @@ kubectl port-forward -n argocd svc/argocd-server 8080:443
 kubectl get secret -n argocd argocd-initial-admin-secret -o yaml |grep password |cut -d " " -f 4| base64 --decode
 ```
 
-# To use the ArgoCD repository, follow these steps:
+### To use the ArgoCD repository, follow these steps:
 
 ```
 kubectl apply -f application.yml
 ```
 
-# View your deployed application in the ArgoCD web interface. Make changes to the YAML files in the `app` folder of your forked repository and watch the changes take effect.
+#### View your deployed application in the ArgoCD web interface. Make changes to the YAML files in the `app` folder of your forked repository and watch the changes take effect.
 
-## Remove all resources, run the following commands:
+### Remove all resources, run the following commands:
 
 ```
 kubectl delete -f application.yaml
@@ -100,4 +100,4 @@ kubectl delete namespace app
 kubectl delete namespace argocd
 ```
 
-# Feel free to customize the sample project to your needs and explore the capabilities of ArgoCD!
+### Feel free to customize the sample project to your needs and explore the capabilities of ArgoCD!
