@@ -1,6 +1,8 @@
-# Argocd
+## Argocd
 
 ### ArgoCD is a tool for continuous delivery that makes it easy for developers to deploy applications to Kubernetes clusters.
+
+<img src="https://github.com/Govindv7555/Govindv7555/blob/main/49e76e0596857673c5c80c85b84394c1.gif" width=100% height=95px>
 
 ## Requirements
 
