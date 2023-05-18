@@ -4,7 +4,7 @@
 
 ## Requirements
 
-# To use these playbooks, you'll need to have the following software installed on your local machine:
+#### To use these playbooks, you'll need to have the following software installed on your local machine:
 
 - Docker
 - A Kubernetes cluster such as minikube, EKS, or kubeadm
